@@ -1,0 +1,62 @@
+<%- include('partials/header.ejs') %>
+
+<h1 class="text-center text-5xl">Add The House Details</h1>
+
+<div class="flex justify-center">
+  <form class="w-lg p-5" action="/form/add-home" method="post">
+    <div class="flex flex-col">
+      <label for="houseName">House Name</label>
+      <input
+        type="text"
+        name="houseName"
+        class="border border-gray-700 rounded-lg p-1"
+      />
+    </div>
+
+    <div class="flex flex-col py-2">
+      <label for="houseLocation">House Location</label>
+      <input
+        type="text"
+        name="houseLocation"
+        class="border border-gray-700 rounded-lg p-1"
+      />
+    </div>
+
+    <div class="flex flex-col py-2">
+      <label for="pricePerNight">Price Per Night</label>
+      <input
+        type="number"
+        name="pricePerNight"
+        class="border border-gray-700 rounded-lg p-1"
+      />
+    </div>
+
+    <div class="flex flex-col py-2">
+      <label for="rating">Rating</label>
+      <input
+        min="1"
+        max="5"
+        type="number"
+        name="rating"
+        class="border border-gray-700 rounded-lg p-1"
+      />
+    </div>
+
+    <div class="flex flex-col py-2">
+      <label for="imageUrl">House Image URL</label>
+      <input
+        type="text"
+        name="imageUrl"
+        class="border border-gray-700 rounded-lg p-1"
+      />
+    </div>
+
+    <input
+      type="submit"
+      value="Submit"
+      class="bg-red-500 hover:bg-red-700 w-full p-2 mt-2 rounded-lg text-white"
+    />
+  </form>
+</div>
+
+<%- include('partials/footer.ejs') %>
