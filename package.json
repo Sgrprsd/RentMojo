@@ -1,0 +1,28 @@
+{
+  "name": "rentmojo",
+  "version": "1.0.0",
+  "description": "A Node.js web app for booking short-term stays, where users can list, search, and book houses. Features include user authentication, property management, secure payments, messaging, and reviews for a smooth rental experience.",
+  "homepage": "https://github.com/Sgrprsd/RentMojo#readme",
+  "bugs": {
+    "url": "https://github.com/Sgrprsd/RentMojo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sgrprsd/RentMojo.git"
+  },
+  "license": "ISC",
+  "author": "Sagar Prasad",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
