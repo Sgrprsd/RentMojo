@@ -1,13 +1,9 @@
 const express = require("express");
+const { addHome, homeDetails } = require("../controllers/home");
 const addHomeRouter = express.Router();
 
-addHomeRouter.get("/add-home", (req, res, next) => {
-  res.render("addHomeForm");
-});
+addHomeRouter.get("/add-home", addHome);
 
-addHomeRouter.post("/add-home", (req, res, next) => {
-  console.log(req.body);
-  res.render("homeAdded");
-});
+addHomeRouter.post("/add-home", homeDetails);
 
 module.exports = addHomeRouter;

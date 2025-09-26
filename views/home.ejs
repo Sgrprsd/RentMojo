@@ -10,4 +10,28 @@
   </div>
 </main>
 
+<section class="mt-5 ">
+  <h1 class="text-lg ">Houses listed</h1>
+  <div class="justify-center flex gap-5">
+<% registeredHomes.forEach((house) => { %>
+<div
+  style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+  class="w-[250px] p-5"
+>
+  <div>
+    <img
+      src=<%= house.imageUrl%>
+      alt="house Name"
+    />
+  </div>
+  <h1 class="text-xl"><%= house.houseName%></h1>
+  <p class="text-xl"><%= house.houseLocation%></p>
+  <div class="flex justify-between">
+    <p>$ <%= house.pricePerNight%> /night</p>
+    <p>⭐ <%= house.rating%></p>
+  </div>
+</div>
+<% })%> 
+</section>
+
 <%- include('partials/footer.ejs') %>
